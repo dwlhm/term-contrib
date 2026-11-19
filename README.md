@@ -1,4 +1,11 @@
-# term-programs
+# term-contrib
+
+What is built on Term's public surface only, outside Term: term programs and
+clients. Nothing here reads Term's source; it uses the installed `term` and
+[`docs/PROTOCOL.md`](https://github.com/dwlhm/term/blob/main/docs/PROTOCOL.md).
+Term's own `make test` runs this repo's tests, so the two stay in step.
+
+## Programs
 
 Term programs for apps that are tedious to drive by hand, so that an agent
 (or a script) uses an app with one command instead of typing into its TUI
@@ -15,7 +22,7 @@ use one, and `--json` prints what an agent can parse.
 
 ```sh
 mkdir -p ~/.config/term
-ln -s ~/project/term-programs ~/.config/term/programs
+ln -s ~/project/term-contrib ~/.config/term/programs
 term program ls
 ```
 
